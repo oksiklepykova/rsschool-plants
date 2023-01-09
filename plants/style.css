@@ -21,7 +21,6 @@ font-family: 'Inter', sans-serif;
  */
 
 body {
-    max-width: 1440px;
     margin: 0 auto;
 }
 
@@ -112,6 +111,7 @@ body {
     font-size: 16px;
     line-height: 20px;
     text-transform: uppercase;
+    transition: all 1s ease-out;
 }
 
 .welcome__button:hover {
@@ -252,10 +252,10 @@ body {
     background: #EDF2EC;
     color: #E06733;
     cursor: pointer;
-    transition: all 200ms ease;
+    transition: 0.3s;
 }
 
-.actives:hover {
+.service__button:hover {
     background: #E06733;
     color: white;
 }
@@ -409,6 +409,12 @@ body {
     color: #E06733;
     background: #FFFFFF;
     cursor: pointer;
+    transition: all 1s ease-out;
+}
+
+.price__button:hover {
+    background: #E06733;
+    color: white;
 }
 
 .price__images {
@@ -532,4 +538,5 @@ body {
     gap: 25px;
     align-items: center;
     list-style: none;
+    transition: 0.3s;
 }
