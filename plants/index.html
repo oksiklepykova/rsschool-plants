@@ -16,39 +16,54 @@
 <body>
    <div class="wrapper">  
     <header class="header">
-       <div class="header__container">
+       <div class="header__container container">
         <a href="" class="header__logo">
             <img src="assets/svg/logo.svg" alt="logo">
         </a>
         <nav class="header__menu menu">
+            <div class="menu__body">
             <ul class="menu__list">
                 <li class="menu__item">
-                    <a href="#home" class="menu__link active">Home</a>
+                    <a href="#home" class="menu__link js-scroll">Home</a>
                 </li>
                 <li class="menu__item">
-                    <a href="#about" class="menu__link">About us</a> 
+                    <a href="#about" class="menu__link js-scroll">About us</a> 
                 </li>
                 <li class="menu__item">
-                    <a href="#service" class="menu__link">Service</a> 
+                    <a href="#service" class="menu__link js-scroll">Service</a> 
                 </li>
                 <li class="menu__item">
-                    <a href="#price" class="menu__link">Price</a>
+                    <a href="#price" class="menu__link js-scroll">Price</a>
                 </li>
                 <li class="menu__item">
-                    <a href="#contacts" class="menu__link">Contacts</a> 
+                    <a href="#contacts" class="menu__link js-scroll">Contacts</a> 
                 </li>
             </ul>
-        </nav>
+            </div>
+            <div class="header__menu-close">
+                <span class="header__menu-close-line"></span>
+                <span class="header__menu-close-line"></span>
+            </div>
+        </nav> 
+        <div class="header__burger burger">
+            <span class="burger__line burger__line-first"></span> 
+            <span class="burger__line burger__line-second"></span>
+            <span class="burger__line burger__line-third"></span>
+            <span class="burger__line burger__line-fourth"></span>
+        </div>
+        
        </div>  
     </header>
+
+  
     <main class="page">
           <section class="page__welcome welcome" id="home">
-            <div class="welcome__container">
+            <div class="welcome__container container">
                 <div class="welcome__images">
                 <img class="welcome__photo" src="assets/img/leafs-3.png" alt="image">
                 </div>
                 <div class="welcome__content">
-                    <h1 class="welcome__title">We grow <span class="welcome__green green"> plants</span> and give <br /> 
+                    <h1 class="welcome__title">We grow <span class="welcome__green green"> plants</span> and give 
                         you oxygen
                     </h1>
                     <div class="welcome__text text">
@@ -62,23 +77,21 @@
                     </div>
                 </div>
             </div>
-
-          </section>
+    
+          </section> 
           <section class="about" id="about">
-            <div class="about__container">
+            <div class="about__container container">
                 <div class="about__content">
                     <h2 class="about__title">
                        We are <span class="about__red red">professional experienced</span> gardeners
                     </h2>
                     <div class="about__text text">
                        <p>
-                        Lorem Ipsum is simply dummy text of the printing and <br />
-                        typesetting industry. Lorem Ipsum has been the industry's <br /> 
-                        standard dummy text ever since the 1500s, when an unknown <br /> 
-                        printer took a galley of type and scrambled it to make a type <br /> 
-                        specimen book. It has survived not only five centuries, but also <br /> 
-                        the leap into electronic typesetting, remaining essentially <br />
-                        unchanged.
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's  
+                        standard dummy text ever since the 1500s, when an unknown  
+                        printer took a galley of type and scrambled it to make a type  
+                        specimen book. It has survived not only five centuries, but also 
+                        the leap into electronic typesetting, remaining essentially unchanged.
                        </p>
                     </div>
                 </div>
@@ -87,8 +100,8 @@
                 </div>
             </div>
           </section> 
-          <section class="service" id="service">
-            <div class="service__container">
+       <section class="service" id="service">
+            <div class="service__container container">
                 <div class="service__content">
                     <h2 class="service__title">
                         Service and our projects
@@ -102,8 +115,7 @@
                 <div class="services">
                     <div class="service__items">
                         <article class="service__item item-blog">
-                            <img class="item-blog" src="assets/img/first.png" alt="image">
-                            <div class="service__item-content">
+                            <img class="item-blog" src="assets/img/first10.jpg" alt="image">                            <div class="service__item-content">
                                 <h3 class="item-blog__title">
                                     Garden care
                                 </h3>
@@ -111,7 +123,7 @@
                             </div>
                         </article>
                         <article class="service__item item-blog">
-                            <img class="item-blog" src="assets/img/first-2.png" alt="image">
+                            <img class="item-blog" src="assets/img/first (7).jpg" alt="image">
                             <div class="service__item-content">
                                 <h3 class="item-blog__title">
                                     Planting
@@ -120,7 +132,7 @@
                             </div>
                         </article>
                         <article class="service__item item-blog">
-                            <img class="item-blog" src="assets/img/first-3.png" alt="image">
+                            <img class="item-blog" src="assets/img/first (9).jpg" alt="image">
                             <div class="service__item-content">
                                 <h3 class="item-blog__title">
                                     Lawn care
@@ -129,7 +141,7 @@
                             </div>
                         </article>
                         <article class="service__item item-blog">
-                            <img class="item-blog" src="assets/img/first-4.png" alt="image">
+                            <img class="item-blog" src="assets/img/first (10).jpg" alt="image">
                             <div class="service__item-content">
                                 <h3 class="item-blog__title">
                                     Planting
@@ -138,7 +150,7 @@
                             </div>
                         </article>
                         <article class="service__item item-blog">
-                            <img class="item-blog" src="assets/img/first-5.png" alt="image">
+                            <img class="item-blog" src="assets/img/first (11).jpg" alt="image">
                             <div class="service__item-content">
                                 <h3 class="item-blog__title">
                                     Garden care
@@ -147,7 +159,7 @@
                             </div>
                         </article>
                         <article class="service__item item-blog">
-                            <img class="item-blog" src="assets/img/first-6.png" alt="image">
+                            <img class="item-blog" src="assets/img/first (13).jpg" alt="image">
                             <div class="service__item-content">
                                 <h3 class="item-blog__title">
                                     Planting
@@ -158,9 +170,10 @@
                     </div>
                 </div>
             </div>
-          </section>
-          <section class="prices" id="price">
-            <div class="prices__container">
+          </section> 
+          
+           <section class="prices" id="price">
+            <div class="prices__container container">
                <div class="prices__accourdion">
                   <h2 class="prices__accourdion-title">Prices</h2>
                   <div class="prices__item">
@@ -191,9 +204,9 @@
                     </div>
                 </div>
             </div>
-          </section>
+          </section> 
           <section class="contacts" id="contacts">
-            <div class="contacts__container">
+            <div class="contacts__container container">
                 <div class="contacts__images">
                     <img class="contacts__photo" src="assets/img/contact_woman.png" alt="image">
                 </div>
@@ -205,45 +218,44 @@
                 </div>
             </div>
           </section>
-    </main>
+    </main>  
     <footer class="footer">
-       <div class="footer__container">
-          <div class="footer__data">
-            <a href="" class="footer__copy">
-                <img src="assets/img/copy.png" alt="Footer Copy">
-            </a>
+       <div class="footer__container container">
+ 
+         <div class="footer__data"> 
+            <span>©</span>
             <span class="footer__year"> 2022</span>
              <a href="https://github.com/oksiklepykova" class="github">github</a>
-          </div>
-          <div class="footer__rss">
-            <a href="https://rs.school/js-stage0/" class="rss">Rolling Scopes School</a>
-          </div>
-          <div class="social__list">
+        </div>
+        <div class="footer__rss">
+            <a href="https://rs.school/js-stage0/" class="rss">Rolling Scopes School</a> 
+        </div>
+         <div class="social__list">
             <ul class="social-footer__contacts">
                 <li class="social-footer__items">
                     <a href="" class="social-footer__item">
-                        <img src="assets/svg/social-1.svg" alt="icon">
+                        <img src="assets/svg/inst.svg" alt="instagram">
                     </a>
                 </li>
                 <li class="social-footer__items">
                     <a href="" class="social-footer__item">
-                        <img src="assets/svg/social-2.svg" alt="icon">
+                        <img src="assets/svg/fb.svg" alt="facebook">
                     </a>
                 </li>
                 <li class="social-footer__items">
                     <a href="" class="social-footer__item">
-                        <img src="assets/svg/social-3.svg" alt="icon">
+                        <img src="assets/svg/tw.svg" alt="twitter">
                     </a>
                 </li>
                 <li class="social-footer__items">
                     <a href="" class="social-footer__item">
-                        <img src="assets/svg/social-4.svg" alt="icon">
+                        <img src="assets/svg/pinterest.svg" alt="pinterest">
                     </a>
                 </li>
-            </ul>
-          </div>
+            </ul> 
+          </div> 
        </div>
-    </footer>
+    </footer>  
    </div>
    <script src="index.js"></script> 
 </body>
