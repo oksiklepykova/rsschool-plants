@@ -160,7 +160,7 @@ font-family: 'Inter', sans-serif;
     }
 }
 
-@media (max-width: 380px) {
+@media (max-width: 580px) {
     .header { 
         padding: 0 5px;
     }  
@@ -174,7 +174,7 @@ font-family: 'Inter', sans-serif;
 }
 
 /* Burger */
-@media (max-width: 380px) {   
+@media (max-width: 580px) {   
     .header__burger {
         display: block
     }
@@ -361,7 +361,7 @@ font-family: 'Inter', sans-serif;
 }
 
 
-@media (max-width: 380px) {
+@media (max-width: 580px) {
     .welcome {
         padding: 0 5px;
         padding-top: 24px;
@@ -494,7 +494,7 @@ font-family: 'Inter', sans-serif;
     }
 }
 
-@media (max-width: 380px) {
+@media (max-width: 580px) {
     .about {
         padding: 0 10px;
     }
@@ -716,8 +716,9 @@ font-family: 'Inter', sans-serif;
         display: flex;
         flex-direction: column;
         flex-wrap: wrap; 
+        align-items: center;
         gap: 100px;  
-        padding-left: 30px;
+        padding-left: 6px;
         padding-bottom: 95px;
     }
 }
@@ -923,7 +924,6 @@ font-family: 'Inter', sans-serif;
     }
     .price__item {
         max-width: 180px;
-    
     }
     .prices__text-title {
         text-align: center;
@@ -1046,7 +1046,7 @@ font-family: 'Inter', sans-serif;
 }
 
 
-@media (max-width: 380px) {
+@media (max-width: 580px) {
     .contacts__container {
         padding: 0px 20px;
         gap: 65px;
@@ -1150,7 +1150,7 @@ font-family: 'Inter', sans-serif;
     } 
 }
 
-@media (max-width: 380px) {
+@media (max-width: 580px) {
     .footer__container {
         padding-top: 11px;
         line-height: 24px;
