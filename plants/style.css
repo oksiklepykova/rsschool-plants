@@ -28,6 +28,7 @@ body {
 font-family: 'Inika', serif;
 font-family: 'Inter', sans-serif;
  */
+ 
 
 .wrapper {
    min-height: 100%;
@@ -231,6 +232,7 @@ font-family: 'Inter', sans-serif;
 
 .page {
     flex: 1 1 auto;
+}
 
 .welcome {
     background: #EDF2EC;
@@ -1468,5 +1470,4 @@ font-family: 'Inter', sans-serif;
 
 
   
-
 
