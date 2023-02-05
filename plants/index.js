@@ -69,6 +69,93 @@
 }());
 
 
-console.log("1.Вёрстка соответствует макету. Ширина экрана 768px +24\n2.Вёрстка соответствует макету. Ширина экрана 380px +24\n3.Ни на одном из разрешений до 320px включительно не появляется горизонтальная полоса прокрутки +7\n4.На ширине экрана 380рх и меньше реализовано адаптивное меню +22 (Допускается появление адаптивного меня на ширине более 380, но не допускается на ширине более 770px) +18.\nBcего 73 балла.");
+
+
+/***Accordion     */
+
+const accordionTitles = document.querySelectorAll(".accordionTitle");
+accordionTitles.forEach((accordionTitle) => {
+    accordionTitle.addEventListener("click", () => {
+        if (accordionTitle.classList.contains("is-open")) {
+            accordionTitle.classList.remove("is-open");
+        } else {
+            const accordionTitlesWithIsOpen = document.querySelectorAll(".is-open");
+           
+            accordionTitlesWithIsOpen.forEach((accordionTitlesWithIsOpen) => {
+            accordionTitlesWithIsOpen.classList.remove("is-open");
+        });
+       accordionTitle.classList.add("is-open");
+    }
+    });
+});
+
+/*  Service  images with blur*/
+
+function search() {
+    const buttons = document.querySelectorAll('button');
+    const imgs = document.querySelectorAll('.item-blog')
+
+    function filter (category, items) {
+        items.forEach((item) => {
+            const isItemFilter = !item.classList.contains(category)
+            if (isItemFilter) {
+                item.classList.add('blur')
+            } else {
+                item.classList.remove('blur')
+            }
+        })
+    }
+
+    buttons.forEach((button) => {
+      button.addEventListener('click', () => {
+          const currentCategory = button.dataset.filter
+          filter(currentCategory, imgs)
+        console.log()
+      })
+    })
+}
+
+search()
+
+/*  --------*/
+
+
+/* Contact */
+function show (a) {
+    document.querySelector('.text02').value = a;
+}
+let contactBtn = document.querySelector('.contacts__btn');
+contactBtn.onclick = function() {
+    contactBtn.classList.toggle('active');
+}
+
+/* dropdown */
+
+
+let menuButtons = document.querySelectorAll('.menu__button');
+let menuButtonsArray = Array.from(menuButtons);
+
+menuButtonsArray.forEach(button => {
+    button.addEventListener('click', () => {
+        closeAnotherButtons(button); 
+        button.classList.toggle('active');
+    } );
+} );   
+
+function closeAnotherButtons(activeButton) { 
+
+    menuButtonsArray.forEach(button => {
+
+        if (button != activeButton) {
+            if (button.classList.contains('active')) {
+                button.classList.remove('active');
+            }
+        }
+
+    });  
+} 
+
+
+console.log("1. Accordion в секции prices реализация 3 - х выпадающих списков об услугах и ценах + 50\n2. При нажатии на кнопки:Gardens,Lawn,Planting происходит смена фокуса на услугах в разделе service +30\n3. В разделе contacts реализован select с выбором городов +25\ Всего 105 ")
 
 
