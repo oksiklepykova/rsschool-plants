@@ -29,6 +29,7 @@ font-family: 'Inika', serif;
 font-family: 'Inter', sans-serif;
  */
 
+
 .wrapper {
    min-height: 100%;
    display: flex;
@@ -631,6 +632,7 @@ font-family: 'Inter', sans-serif;
       width: 100%;
       grid-template-columns: repeat(auto-fill, 280px);
     }
+
     .item-blog {
         display: block;
         height: 350px;
@@ -939,6 +941,7 @@ font-family: 'Inter', sans-serif;
     .prices {
         padding: 0px 26px;
     }
+
     .prices__container {
         justify-content: space-between;
         margin-right: 0px;
@@ -1066,7 +1069,6 @@ font-family: 'Inter', sans-serif;
     max-width: 450px;
     margin-top: 148px;
     margin-right: -10px;
-    
 }
 
 /* .drop-down__btn  */
