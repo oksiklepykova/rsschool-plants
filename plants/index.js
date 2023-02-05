@@ -157,3 +157,5 @@ function closeAnotherButtons(activeButton) {
 
 
 console.log("1. Accordion в секции prices реализация 3 - х выпадающих списков об услугах и ценах + 50\n2. При нажатии на кнопки:Gardens,Lawn,Planting происходит смена фокуса на услугах в разделе service +30\n3. В разделе contacts реализован select с выбором городов +25\ Всего 105 ")
+
+
