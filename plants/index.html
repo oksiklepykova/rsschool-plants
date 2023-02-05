@@ -99,7 +99,7 @@
                     <img class="about__photo" src="assets/img/houseplant-1.jpg" alt="image">
                 </div>
             </div>
-          </section> 
+          </section>   
        <section class="service" id="service">
             <div class="service__container container">
                 <div class="service__content">
@@ -107,23 +107,24 @@
                         Service and our projects
                     </h2>
                     <div class="service__btns">
-                       <button class="service__button">Gardens</button>
-                       <button class="service__button">Lawn</button>
-                       <button class="service__button">Planting</button>
+                       <button  data-filter="garden"  class="service__button">Gardens</button>
+                       <button data-filter="lawn"  class="service__button">Lawn</button>
+                       <button data-filter="planting"  class="service__button">Planting</button>
                     </div>
-                </div>
+                </div> 
                 <div class="services">
                     <div class="service__items">
-                        <article class="service__item item-blog">
-                            <img class="item-blog" src="assets/img/first10.jpg" alt="image">                            <div class="service__item-content">
+                        <article class="service__item">  
+                            <img class="item-blog garden "  src="assets/img/first10.jpg" alt="image">
+                            <div class="service__item-content">
                                 <h3 class="item-blog__title">
                                     Garden care
                                 </h3>
                                 <p class="item-blog__text">Lorem Ipsum has been the industry</p>
                             </div>
                         </article>
-                        <article class="service__item item-blog">
-                            <img class="item-blog" src="assets/img/first (7).jpg" alt="image">
+                        <article class="service__item">
+                            <img class="item-blog planting" src="assets/img/first (7).jpg" alt="image">
                             <div class="service__item-content">
                                 <h3 class="item-blog__title">
                                     Planting
@@ -131,8 +132,8 @@
                                 <p class="item-blog__text">Lorem Ipsum has been the industry</p>
                             </div>
                         </article>
-                        <article class="service__item item-blog">
-                            <img class="item-blog" src="assets/img/first (9).jpg" alt="image">
+                        <article class="service__item">
+                            <img class="item-blog lawn" src="assets/img/first (9).jpg" alt="image">
                             <div class="service__item-content">
                                 <h3 class="item-blog__title">
                                     Lawn care
@@ -140,8 +141,8 @@
                                 <p class="item-blog__text">Lorem Ipsum has been the industry</p>
                             </div>
                         </article>
-                        <article class="service__item item-blog">
-                            <img class="item-blog" src="assets/img/first (10).jpg" alt="image">
+                        <article class="service__item">
+                            <img class="item-blog planting" src="assets/img/first (10).jpg" alt="image">
                             <div class="service__item-content">
                                 <h3 class="item-blog__title">
                                     Planting
@@ -149,8 +150,8 @@
                                 <p class="item-blog__text">Lorem Ipsum has been the industry</p>
                             </div>
                         </article>
-                        <article class="service__item item-blog">
-                            <img class="item-blog" src="assets/img/first (11).jpg" alt="image">
+                        <article class="service__item">
+                            <img class="item-blog garden" src="assets/img/first (11).jpg" alt="image">
                             <div class="service__item-content">
                                 <h3 class="item-blog__title">
                                     Garden care
@@ -158,8 +159,8 @@
                                 <p class="item-blog__text">Lorem Ipsum has been the industry</p>
                             </div>
                         </article>
-                        <article class="service__item item-blog">
-                            <img class="item-blog" src="assets/img/first (13).jpg" alt="image">
+                        <article class="service__item">
+                            <img class="item-blog planting" src="assets/img/first (13).jpg" alt="image">
                             <div class="service__item-content">
                                 <h3 class="item-blog__title">
                                     Planting
@@ -171,25 +172,46 @@
                 </div>
             </div>
           </section> 
-          
-           <section class="prices" id="price">
+
+         <section class="prices" id="price">
             <div class="prices__container container">
                <div class="prices__accourdion">
                   <h2 class="prices__accourdion-title">Prices</h2>
-                  <div class="prices__item">
-                    <div class="prices__items">
-                        <div class="price__item">
-                            <button type="button" class="accourdion__btn-title">Basics</button>
-                        </div>
-                        <div class="price__item">
-                            <button type="button" class="accourdion__btn-title">Standard</button>
-                        </div>
-                        <div class="price__item">
-                            <button type="button" class="accourdion__btn-title">Pro care</button>
+                    <div class="prices__item">
+                        <div class="prices__items">
+                            <div class="accordionItem">
+                                <button type="button" class="accordionTitle">Basics</button>
+                                <div class="accordionContent">
+                                    <p>Release of Letraset sheets containing Lorem Ipsum passages, and more recently</p>
+                                    <div class="spoller__content">
+                                        <p class="cost">$15<span class="per"> / per hour</span></p>
+                                        <a href="#contacts" class="spoller__btn">Order</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordionItem">
+                                <button type="button" class="accordionTitle">Standart</button>
+                                <div class="accordionContent">
+                                    <p>Release of Letraset sheets containing Lorem Ipsum passages, and more recently</p>
+                                    <div class="spoller__content">
+                                        <p class="cost">$25<span class="per"> / per hour</span></p>
+                                        <a href="#contacts" class="spoller__btn">Order</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordionItem">
+                                <button type="button" class="accordionTitle">Pro care</button>
+                                <div class="accordionContent">
+                                    <p>Release of Letraset sheets containing Lorem Ipsum passages, and more recently</p>
+                                    <div class="spoller__content">
+                                        <p class="cost">$35<span class="per"> / per hour</span></p>
+                                        <a href="#contacts" class="spoller__btn">Order</a>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                  </div>
-               </div>
+                </div>
                 <div class="price__content">
                     <div class="prices__text">
                         <h2 class="prices__text-title">
@@ -201,9 +223,9 @@
                     </div>
                     <div class="price__images">
                         <img class="price__photo" src="assets/img/leafs.png" alt="image">
-                    </div>
-                </div>
-            </div>
+                    </div> 
+               </div>
+            </div>  
           </section> 
           <section class="contacts" id="contacts">
             <div class="contacts__container container">
@@ -213,15 +235,62 @@
                 <div class="contacts__content">
                    <h2 class="contacts__title">Contact us</h2>
                 </div>
+               
                 <div class="contacts__btn">
-                    <button type="button" class="drop-down__btn">City</button>
+           <!--         <button type="button" class="drop-down__btn">City</button> -->
+                  <input type="text" class="text02" readonly placeholder="City">
+                  <div class="option">
+                    <div onmouseover="show('Canandaigua, NY')" class="menu__button">
+                        Canandaigua, NY
+                   <div class="dropdown-container"> 
+                            <ul>
+                                <li>City: <span class="city">Canandaigua, NY</span></li>
+                                <li>Phone: <span class="tel">+1 585 393 0001</span></li>
+                                <li>Office adress: <span class="adress">151 Charlotte Street</span></li>
+                                <li><a href="tel:+15853930001" class="call__us">Call us</a></li>
+                            </ul>
+                        </div>
+                   </div> 
+                    <div onmouseover="show('New York City')" class="menu__button">
+                        New York City
+                        <div class="dropdown-container">
+                            <ul>
+                                <li>City: <span class="city">New York City</span></li>
+                                <li>Phone: <span class="tel">+1 212 456 0002</span></li>
+                                <li>Office adress: <span class="adress">9 East 91st Street</span></li>
+                                <li><a href="tel:+12124560002" class="call__us">Call us</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div onmouseover="show('Yonkers, NY')" class="menu__button">
+                        Yonkers, NY
+                        <div class="dropdown-container">
+                            <ul>
+                                <li>City: <span>Yonkers, NY</span></li>
+                                <li>Phone: <span>+1 914 678 0003</span></li>
+                                <li>Office adress: <span>511 Warburton Ave</span></li>
+                                <li><a href="tel:+19146780003" class="call__us">Call us</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div onmouseover="show('Sherrill, NY')" class="menu__button">
+                        Sherrill, NY
+                        <div class="dropdown-container">
+                            <ul>
+                                <li>City: <span>Sherrill, NY</span></li>
+                                <li>Phone: <span>+1 315 908 0004</span></li>
+                                <li>Office adress: <span>14 WEST Noyes BLVD</span></li>
+                                <li><a href="tel:+13159080004" class="call__us">Call us</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                  </div>
                 </div>
             </div>
-          </section>
+          </section> 
     </main>  
     <footer class="footer">
        <div class="footer__container container">
- 
          <div class="footer__data"> 
             <span>©</span>
             <span class="footer__year"> 2022</span>
