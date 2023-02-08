@@ -764,7 +764,8 @@ font-family: 'Inter', sans-serif;
 
 .prices__item {
     max-width: 332px;
-    max-height: 280px;
+    max-height: 100%;
+ /*   max-height: 280px; */
     border: 1px solid #E3E1D5;
     border-radius: 20px;   
 }
@@ -1002,7 +1003,7 @@ font-family: 'Inter', sans-serif;
     }
     .prices__item {
         max-width: 224px;
-        max-height: 235px;
+     /*   max-height: 235px; */
         margin-top: 36px;
         margin-left: 42px;
     }
